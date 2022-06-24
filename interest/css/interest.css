@@ -1,0 +1,99 @@
+section.tableContainer {
+  display: table;
+  height: 900px;
+  width: 1069px;
+  border-spacing: 1px;
+  margin: 60px 10px 60px 10.925px;
+}
+
+section.tableContainer div.tablerow {
+  display: table-row;
+  background: rgba(0, 0, 0, 0.151);
+}
+
+
+section.tableContainer div.tablerow div.picture {
+  display: table-cell;
+  position: relative;
+  width: 600px;
+  height: 200px;
+  border:1px rgb(46, 74, 100)  solid ;
+}
+section.tableContainer div.tablerow div.explain {
+  display: table-cell;
+  position: relative;
+  width: 400px;
+  vertical-align: top;
+  line-height: 1.3;
+  border:1px rgb(46, 74, 100)  solid ;
+}
+
+section.tableContainer div.tablerow div.explain div.content{
+  margin: 60px;
+}
+section.tableContainer div.tablerow div.picture ul.navigation,li{
+    list-style: none;
+}
+
+
+ul{
+    list-style: none;
+    height: auto;
+   transform: translateX(-10%); 
+    z-index: 100; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    margin: 50px auto;
+    border-radius: 4px;
+    opacity: 0.9;
+    transition: 0.5s;
+    overflow: hidden;
+}
+li:hover{
+    opacity: 1;
+}
+li img{
+    width: 150px;
+    transition:  0.5s;
+}
+li img:hover{
+    width: 160px;
+} 
+aside {
+  height: 898px;
+  width: 200px;
+  margin: 60px 10.925px 60px 10px;
+  text-align: center;
+  vertical-align: top;
+  border:1px rgb(46, 74, 100)  solid ;
+  line-height: 1.3;
+  float: right;
+  background: rgba(0, 0, 0, 0.151);
+}
+
+div.h2title  img{
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+div.part1 img,div.part2 img,div.part3 img{
+  width: 200px;
+  height: 80px;
+}
+
+blockquote{
+  width: 300px;
+  text-align: center;
+}
+p{
+  padding-left: 8px;
+  width: 350px;
+  line-height: 1.8;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALL ABOUT ME</title>
+    <link rel="shortcut icon" href="image\酸奶.png">
+    <link rel="stylesheet" href="index\css\all_about_me.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 页眉 -->
+    <div class="all">
+    <header>
+      <div class="slogen" >ALL ABOUT LZM</div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+      <!-- 图片轮播 -->
+      <section class="tupian">
+        <div class="b"></div>
+        <!-- 用flex实现纵向布局 -->
+        <div class="photos">
+          <div class="d dd"><img src="index\image\1.png" alt="" /></div>
+          <div class="d"><img src="index\image\2.png" alt="" /></div>
+          <div class="d"><img src="index\image\3.png" alt="" /></div>
+          <div class="d"><img src="index\image\4.png" alt="" /></div>
+          <div class="d"><img src="index\image\5.png" alt="" /></div>
+        </div>
+
+        <!-- 嵌入js代码 -->
+        <script>
+          //  用querySelector() 方法返回匹配指定选择器的第一个元素
+          // 获取左边大图的元素
+          let b = document.querySelector(".b");
+          // getElementsByClassName() 方法返回文档中所有指定类名的元素集合
+          // 获取右边小图的所有元素
+          let d = document.getElementsByClassName("d");
+
+          let time;
+          let index = 0;
+          // 设置一个重置函数
+          let tupian = function () {
+            for (let i = 0; i < d.length; i++) {
+              d[i].className = "d";
+            }
+          };
+          // 设置一个选中函数
+          let aa = function () {
+            // 先带入选中函数
+            tupian();
+            d[index].className = "d dd";
+          };
+          // 设置启动轮播图的时间函数
+          function ts() {
+            time = setInterval(function () {
+              aa();
+              index++;
+              b.style.backgroundImage = "url('index/image/" + [index] + ".png')";
+              if (index == s) {
+                index = 0;
+              }
+            }, 1500);
+          }
+          for (let i = 0; i < d.length; i++) {
+            // 鼠标移至当前小图片上时触发
+            d[i].onmousemove = function () {
+              // 鼠标移动到当前小图片时右边大图片变成当前的小图片
+              b.style.backgroundImage = "url('index/image/" + [i + 1] + ".png')";
+              // 鼠标移动到小图片上时关闭定时器并重置定时
+              // 鼠标移开后继续
+              tupian();
+              clearInterval(time);
+              index = i + 1;
+              ts();
+            };
+          }
+          // 执行轮播图
+          ts();
+        </script>
+      </section>
+      
+      <!-- 过渡 -->
+      <div class="transition">
+        LEARN MORE ABOUT ME
+      </div>
+
+      <!-- 3个板块链接3个页面 -->
+      <section class="content">
+        <!-- 兴趣 -->
+        <div class="interest">
+          <img src="index\image\棒棒糖.svg" alt="兴趣">
+          <a href="interest\html\interest.html" title="我的兴趣爱好">爱好</a>
+        </div>
+        <!-- 大学生活 -->
+        <div class="life">
+          <img src="index\image\香草冰淇淋.svg" alt="大学生活">
+          <a href="life\html\life.html" title="我的大学生活">大学生活</a>
+        </div>
+        <!-- 表单 -->
+        <div class="introduce">
+          <img src="index\image\矿泉水.svg" alt="联系我">
+          <a href="resume\html\more.html" title="联系我">联系我吧</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      &copy; 2022, ALL ABOUT LZM
+        <br>
+        WHAT DO I LOVE, HOW IS MY LIFE IN UNIVERSITY
+    </footer>
+  </div>
+  </body>
+</html>

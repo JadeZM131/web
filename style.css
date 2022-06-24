@@ -1,0 +1,33 @@
+body {
+  height: 100%;
+  width: 1319.65px;
+  background-image: url('image/22C22BFB9ECDCA8922E5246594D0358F.png');
+  margin:           0px;
+  font-family:'Times New Roman', Times, serif;
+ 
+}
+
+header {
+  height: 96px;
+  /* margin-left: auto;
+  margin-right: auto;*/
+  text-align: center; 
+  line-height: 96px;
+  font-size: 200%;
+}
+
+
+main {
+  height: 900px;
+  margin: 10px 10px 0px 10px;
+ 
+}
+
+footer {
+  color: white;
+  text-align:       center;
+  padding:          15px;
+  margin: 0px 10px 10px 10px;
+  font-size:        50%;
+  clear: both;
+}

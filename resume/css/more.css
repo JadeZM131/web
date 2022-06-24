@@ -1,0 +1,71 @@
+section#resume{
+    /* text-align: center; */
+    margin: 227.4px;
+}
+form {
+    height: 194x;
+    width: 194;
+    display: table;
+    padding: 10px;
+    margin: auto;
+    border: thin dotted #7e7e7e;
+    background: rgba(0, 0, 0, 0.151);
+    line-height: 1.5;
+    
+}
+div.tableRow {
+    display: table-row;
+}
+
+fieldset {
+    height: 192px;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+    
+}
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+div.tableRow label:first-child {
+    text-align: right;
+}
+div.tableRow > p, div.tableRow > label, div.tableRow > input {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

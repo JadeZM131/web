@@ -1,0 +1,122 @@
+/* 照片墙的css */
+
+section.tupian {
+  height: 400px;
+  margin: 20px 324.825px 0px 324.825px;
+  width: 650px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+section.tupian div.b {
+  width: 400px;
+  height: 400px;
+  transition: 0.4s;
+  background-size: cover;
+}
+
+section.tupian div.photos {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.tupian div.photos div.d {
+  position: relative;
+  width: 200px;
+  height: 90px;
+  right: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+section.tupian div.photos div.d img {
+  position: absolute;
+  width: 200px;
+  /* 小图片上移 */
+  transform: translate(0, -50px);
+  transition: 0.5s;
+  right: 0;
+}
+
+section.tupian div.photos div.d.dd {
+  opacity: 0;
+  right: 250px;
+}
+
+section.tupian div.photos div.d:hover img {
+  opacity: 0;
+  right: 250px;
+}
+
+/* 过渡区 */
+div.transition {
+  height: 100px;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 100px;
+  font-size: larger;
+  color: rgb(17, 14, 14);
+}
+
+/* 链接另外三个页面的内容区 */
+main section.content {
+  height: 400px;  
+}
+
+main section.content div.interest {
+  width: 373px;
+  height: 300px;
+  float: left;
+  margin: 30px 10px 50px 70.325px;
+  overflow: hidden;
+}
+main section.content div.life {
+  width: 373px;
+  height: 300px;
+  float: left;
+  margin: 30px 10px 50px 10px;
+}
+main section.content div.introduce {
+  width: 373px;
+  height: 300px;
+  margin: 30px 70.325px 50px 10px;
+  float: right;
+}
+
+section.content div.life,div.interest
+,
+div.introduce {
+  font-size: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+main section.content div.interest img,
+div.life img,
+div.introduce img {
+  margin-bottom: 20px;
+  height: 250px;
+  width: 100%;
+  opacity: 0.95;
+  transition: 0.6s;
+}
+
+main section.content img:hover {
+  transform: scale(1.2);
+}
+
+a:link{
+  color: rgb(10, 26, 41);
+}
+
+a:hover{
+  color: blueviolet;
+}
+
+a:visited{
+  color:rgb(17, 141, 46)
+}
